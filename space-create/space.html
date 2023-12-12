@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Space build</title>
+        <link rel="stylesheet" href="space.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+            </div>
+            <div class="hr">
+                
+            </div>
+            <div class="flex">
+                
+                <nav>
+                    
+                    <div class="id"><a href="#">00 HOME</a></div>
+                    <div class="id"><a href="#">01 DESTINATION</a></div>
+                    <div class="id"><a href="#">02 CHEW</a></div>
+                    <div class="id"><a href="#">03 TECHNOLOGY</a></div>
+        
+                </nav>
+            </div>
+        </div>
+        <div id="space">
+            <h2>SO, YOU WANT TO TRAVEL TO</h2>
+            <div class="spacing">
+                <div class="gap">S</div>
+                <div class="gap" style="color: rebeccapurple;">P</div>
+                <div class="gap" style="color: orange;">A</div>
+                <div class="gap" style="color: brown;">C</div>
+                <div class="gap" style="color: green;">E</div>
+            </div>
+            <h4>
+                Let’s face it; if you want to go to space, you might as well genuinely go to 
+                outer space and not hover kind of on the edge of it. Well sit back, and relax 
+                because we’ll give you a truly out of this world experience!
+            </h4>
+            <div class="circle">
+                <h5>EXPLORE</h5>
+            </div>
+           
+        </div>
+        <script>
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function () {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function (msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            }
+            else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+        </script>
+    </body>
+</html>

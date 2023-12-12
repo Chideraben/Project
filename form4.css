@@ -1,0 +1,163 @@
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+
+}
+.container{
+    width: 800px;
+    height: 490px;
+    background-color: white;
+    gap: ;
+    display: flex;
+    overflow: ;
+    border-radius: 10px;
+    
+    
+}
+.content-1{
+    width: 300px;
+    height: 5px;
+    
+    padding: 8px;
+}
+.content-2{
+    margin-top: 30px;
+    height: 0px;
+    margin-left: 50px ;
+    position: ;
+}
+.button{
+    font-size: 5px;
+    top: 10px;
+    color: white;
+    height: 100px;
+    
+
+
+}
+.a{
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    width: 25px;
+    height: 25px;
+    top: -1px;
+}
+.a{
+   border-radius:30px;
+   text-decoration: none;
+   text-align:center;
+   font-size: 10px;
+   position: relative;
+   width:30px;
+   height: 30px;
+   background-color:transparent;
+   color: antiquewhite;
+   border: 1px solid white;
+   font-weight: bolder;
+
+ }
+ .a:visited{
+   width: 30px;
+   height: 30px;
+   border-radius: 30px;
+   background-color: rgba(0, 255, 255, 0.664);
+   text-align: center;
+ }
+ 
+ .a:hover{
+   border-radius: 30px;
+   background-color: rgba(0, 255, 255, 0.664);
+   text-align: center;
+ }
+ h2{
+    font-size: small;
+    color: white;
+    margin-left: 45px;
+    margin-top:-4px ;
+ }
+ a{
+    font-size: small;
+ }
+ .span{
+    border: 1.5px solid blue;
+    width: 350px;
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+
+ }
+ .span:hover{
+    border: 1.5px solid blue;
+    width: 350px;
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgba(176, 224, 230, 0.644);
+ }
+ 
+ section{
+    display: flex;
+    margin-left: 8px;
+    
+ }
+.hp{
+    opacity: 0.4;
+    font-size: 15px;
+    font-weight: 800;
+}
+h1{
+    color: navy;
+    font-weight: 700;
+}
+.hpp{
+    opacity: 0.4;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: -15px;
+}
+h4{
+    
+color: navy;
+
+}
+.dvd{
+    margin-left: 70px;
+    margin-top: 10px;
+    color: rgba(22, 50, 209, 0.952);
+}
+.h3{
+    margin-left: 10px;
+}
+input{
+    width: 18px;
+    height: 18px;
+    margin-top: 30px;
+}
+.dvds{
+    margin-left: 98px;
+    color: rgba(22, 50, 209, 0.952);
+}
+#goback{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    color: rgba(6, 6, 119, 0.836);
+}
+#go{
+    margin-top: 50px;
+}
+.step{
+    background-color: rgba(6, 6, 119, 0.925);
+    width: 90px;
+    height: 40px;
+    border-radius: 6px;
+    color: aliceblue;
+    margin-left: 190px;
+    border: 1px transparent;
+}
