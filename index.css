@@ -1,7 +1,6 @@
 body{
     background-image:url("img.jpg");
     backdrop-filter: blur(px);
-    background-size: cover;
     background-position: fixed;
     background-size: 100%;
     position: relative;
