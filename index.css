@@ -202,7 +202,10 @@ button:hover{
      display:flex;
      
  }
- 
+ .input{
+     font-size: 20px;
+     font-weight: 400;
+ }
  .circle-2{
     background-color: aliceblue;
     width: 300px;
