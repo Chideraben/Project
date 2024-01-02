@@ -1,0 +1,228 @@
+body{
+    background-image:url("images/_de933b56-1dac-4000-8619-642fd0b6b516.jpg");
+    backdrop-filter: blur(px);
+    background-size: cover;
+    background-position: fixed;
+    background-size: 100%;
+    position: relative;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+   min-height: 100vh;
+   box-sizing: border-box;
+   align-items: center;
+   
+}
+.box{
+    width: 430px;
+    height: 550px;
+    backdrop-filter: blur(30px);
+    background-color: ;
+    box-shadow: 0px 15px 30px rgb(62, 13, 13);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    
+}
+.circle{
+    background-color: aliceblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: -120px;
+    left: -50px;
+    box-shadow: inset 0px 15px 25px rgb(104, 102, 102) ;
+    position: absolute;
+}
+a{
+  
+}
+
+.switch{
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.3em;
+    height: 1.9em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.switch::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(20px);
+    z-index: -1;
+    border-radius: 50px;
+    background-color: #d8ff99;
+    animation: top 3s infinite;
+    -webkit-animation: top 3s infinite;
+}
+/*Hide default HTML checkbox*/
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The Slider*/
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fdfefedc;
+    transition: ;
+    border-radius: 30px;
+    
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.3em;
+    bottom: 0.35em;
+    transition: 2s;
+    border-radius: 50%;
+    box-shadow: rgba(0,0,0,0.17) 0px -10px 10px 0px inset,rgba(0,0,0,0.09) 0px -1px 15px -8px;
+    background-color: #ff99fd;
+   
+}
+.input__check:checked + .slider{
+    background-color: #17202a;
+}
+.input__check:checked + .slider::before{
+    transform: translateX(1.3em);
+    
+}
+#form-container{
+    
+    color: aliceblue;
+    border-radius: 20px;
+    font-family: "Raleway",sans-serif;
+    border-radius: 20px;
+    position: absolute;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#form{
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(220, 212, 212);
+    padding: 20px;
+    color: wheat;
+    font-weight: bolder;
+    
+}
+#form:focus{
+    border: none;
+    outline: none;
+}
+::placeholder{
+    color: rgb(160, 126, 126);
+    font-size: large;
+}
+
+button{
+    width: 150px;
+    height: 35px;
+    margin-left: 20%;
+    margin-top: 30px;
+    border-radius: 50px;
+    box-shadow: 0px 1px 20px;
+    font-size: larger;
+    
+}
+h1{
+ color: rgba(35, 81, 180, 0.313);
+ font-family: 'Arial Narrow Bold', sans-serif;
+ font-weight: bolder;
+ width: 300px;
+ height: 50px;
+ text-align: center;
+ text-shadow: 3px 3px 3px rgb(15, 15, 15);
+ 
+}
+a:hover{
+    text-decoration: none;
+    cursor: grab;
+}
+button:hover{
+    background-color:rgba(0, 0, 0, 0.356) ;
+    color: blue;
+    cursor: all;
+    animation-duration: 2px;
+    width: 100px;
+    margin-left: 15%;
+    transition: 2s ;
+    transition-timing-function:cubic-bezier(0.39, 0.575, 0.565, 1);
+    
+
+}
+.circle-2{
+    background-color: aliceblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 40% 50%;
+    top: 450px;
+    left: 320px;
+    box-shadow: inset 0px 15px 25px rgb(104, 102, 102) ;
+    position: absolute;
+}
+@media  screen and (max-width:470px) {
+  
+    .box{
+     
+     width: 300px;
+     height: 490px;
+     border: 1px saddlebrown;
+     border-radius: 10px;
+     box-shadow: 0px 15px 20px var(--grayish-purple);
+     overflow: hidden;
+     display:flex;
+     
+ }
+ }
+ .circle-2{
+    background-color: aliceblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 40% 50%;
+    top: 410px;
+    left: 320px;
+    box-shadow: inset 0px 15px 25px  rgb(104, 102, 102);
+    position: absolute;
+}
+.circle{
+    background-color: aliceblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: -170px;
+    left: -90px;
+    box-shadow: inset 0px 15px 25px rgb(104, 102, 102);
+    position: absolute;
+    
+    
+}
